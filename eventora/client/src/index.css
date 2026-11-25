@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-ink: #1c1633;
+  --color-stub: #ff5a36;
+  --color-wash: #f4f2fb;
+}
+
+body { @apply bg-wash text-ink font-sans; }
+.input { @apply w-full rounded-lg border border-ink/20 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-stub; }
+.btn { @apply rounded-lg bg-stub px-4 py-2 font-semibold text-white hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:opacity-50; }
